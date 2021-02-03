@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReportInArea"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameWithreport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameWithreport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add Visited place"
+        android:textColor="@color/colorLabel"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/fieldsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/personNameOrLocation"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Name of person or Area or Street"
+            android:textColor="@color/colorLabel"
+            android:textColorHighlight="@color/colorLabel"
+            android:textColorHint="@color/colorLabel"
+            android:textColorLink="@color/colorLabel" />
+
+        <EditText
+            android:id="@+id/locationDetails"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Found on location"
+            android:textColor="@color/colorLabel"
+            android:textColorHighlight="@color/colorLabel"
+            android:textColorHint="@color/colorLabel"
+            android:textColorLink="@color/colorLabel" />
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Add"
+            android:onClick="setOnPlaceReport"
+            android:background="@color/colorButton"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/reportPositiveCheck"
+        android:layout_width="262dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onReportPositive"
+        android:text="Report yourself as covid-19 Positive"
+        android:textColor="@color/colorRed"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="597dp" />
+
+</LinearLayout>
+</ScrollView>

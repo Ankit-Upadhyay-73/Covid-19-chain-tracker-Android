@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "554853225317",
+    "firebase_url": "https://selfassist-cfd76.firebaseio.com",
+    "project_id": "selfassist-cfd76",
+    "storage_bucket": "selfassist-cfd76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554853225317:android:725e2a09404618d13b078c",
+        "android_client_info": {
+          "package_name": "com.example.selfassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554853225317-h0ad1kofbk1ckni6uomg6s9e6ia2br9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.selfassist",
+            "certificate_hash": "8b3b2841d8c493616445e1676b3f416c9af7eabe"
+          }
+        },
+        {
+          "client_id": "554853225317-2001829c666olav7c460108lsp9ns67m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTm5MZpsOoCKYXX085OQJ8LLpIa5LKTIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554853225317-2001829c666olav7c460108lsp9ns67m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

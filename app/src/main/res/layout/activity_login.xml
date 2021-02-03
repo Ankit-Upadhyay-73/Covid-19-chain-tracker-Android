@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/colorLabel"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter mobile number"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorLabel"
+            android:textColorHighlight="@color/colorLabel"
+            android:textColorHint="@color/colorLabel"
+            android:textColorLink="@color/colorLabel"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:textColor="@color/colorLabel"
+            android:textColorHighlight="@color/colorLabel"
+            android:textColorHint="@color/colorLabel"
+            android:textColorLink="@color/colorLabel"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorButton"
+        android:onClick="setOnSubmit"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+</LinearLayout>
